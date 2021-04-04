@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Pago;
 use App\ServicioRegistro;
-use App\Finalizarpago;
+use App\FinalizarPago;
 
 class PagoController extends Controller
 {

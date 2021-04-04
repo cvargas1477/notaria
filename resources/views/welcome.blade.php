@@ -90,9 +90,9 @@
                 </div>
                 
                 <div class="links">
-                    <a href="#">Mezon: mezon@notaria.com / 12345678</a>
+                    <a href="#">Meson: meson@notaria.com / 12345678</a>
                     <a href="#">Cajero: cajero@notaria.com / 12345678</a>
-                    <a href="#">Cajero: mezon_cajero@notaria.com / 12345678</a>
+                    <a href="#">MesonCajero: mesoncajero@notaria.com / 12345678</a>
                     <a href="#">Administrador: admin@notaria.com / </a>
                     
                 </div>

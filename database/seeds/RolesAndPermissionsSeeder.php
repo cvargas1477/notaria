@@ -17,8 +17,8 @@ class RolesAndPermissionsSeeder extends Seeder
         app()[PermissionRegistrar::class]->forgetCachedPermissions();
 
         $role_admin = Role::create([ 'name' => 'admin']);
-        $role_mezoncajero = Role::create([ 'name' => 'mezoncajero']);
-        $role_mezon = Role::create([ 'name' => 'mezon']);
+        $role_mesoncajero = Role::create([ 'name' => 'mesoncajero']);
+        $role_meson = Role::create([ 'name' => 'meson']);
         $role_cajero = Role::create([ 'name' => 'cajero']);
        
         Role::create([ 'name' => 'super-admin']);
@@ -51,13 +51,13 @@ class RolesAndPermissionsSeeder extends Seeder
                 'edit all user',
                 'report',           
             ],
-            'mezoncajero' => [
+            'mesoncajero' => [
                 'create service', 
                 'save service',
                 'pay service',
                 'report',
             ],
-            'mezon' => [
+            'meson' => [
                 'create service', 
                 'save service',
             ],
@@ -74,8 +74,8 @@ class RolesAndPermissionsSeeder extends Seeder
         Permission::insert($permissions->toArray());
 
         $role_admin->syncPermissions($permissions_by_role['admin']);
-        $role_mezoncajero->syncPermissions($permissions_by_role['mezoncajero']);
-        $role_mezon->syncPermissions($permissions_by_role['mezon']);
+        $role_mesoncajero->syncPermissions($permissions_by_role['mesoncajero']);
+        $role_meson->syncPermissions($permissions_by_role['meson']);
         $role_cajero->syncPermissions($permissions_by_role['cajero']);
 
     }

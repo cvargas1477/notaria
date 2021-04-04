@@ -264,7 +264,7 @@ function loadData(){
                      
                                 // Update footer
                                 $( api.column( 5 ).footer() ).html(
-                                    '$'+pageTotal 
+                                    '$'+pageTotal
                                 );
                             }
 

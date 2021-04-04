@@ -82,9 +82,11 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
+                    <!--
                     <ul class="navbar-nav mr-auto">
 
                     </ul>
+                    -->
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -105,18 +107,18 @@
                            
 
                             <li class="nav-item">
-                            @hasrole('mezon|mezoncajero|admin|super-admin')
+                            @hasrole('meson|mesoncajero|admin|super-admin')
                                 <a class="nav-link" href="{{  route('servicio.index')}}">Servicios </a>
                             @endhasrole    
                              </li>
                              <li class="nav-item"> 
-                             @hasrole('cajero|mezoncajero|admin|super-admin')  
+                             @hasrole('cajero|mesoncajero|admin|super-admin')  
                                 <a class="nav-link" href="{{ route('pagos.index') }}">Pagar</a>
                              @endhasrole   
                              </li>
                             
                              <li class="nav-item dropdown">
-                             @hasrole('cajero|mezoncajero|admin|super-admin')
+                             @hasrole('cajero|mesoncajero|admin|super-admin')
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     Reportes <span class="caret"></span>
                                 </a>

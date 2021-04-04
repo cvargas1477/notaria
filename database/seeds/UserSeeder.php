@@ -24,15 +24,15 @@ class UserSeeder extends Seeder
             'enabled' => true,
         ]);
 
-        $user_mezon = factory(User::class)->create([
-            'name' => 'Mezon',
-            'email' => 'mezon@notaria.com',
+        $user_meson = factory(User::class)->create([
+            'name' => 'Meson',
+            'email' => 'meson@notaria.com',
             'enabled' => true,
         ]);
 
-        $user_pamela = factory(User::class)->create([
-            'name' => 'Pamela',
-            'email' => 'pamela@notaria.com',
+        $user_mesoncajero = factory(User::class)->create([
+            'name' => 'MesonCajero',
+            'email' => 'mesoncajero@notaria.com',
             'enabled' => true,
         ]);
 
@@ -50,13 +50,13 @@ class UserSeeder extends Seeder
 
         factory(User::class, 30)->make()->each(function($user) {
             $user->save();
-            $user->assignRole('mezon');
+            $user->assignRole('meson');
         });
 
         $user_admin->assignRole('admin');
         $user_cristian->assignRole('admin');
-        $user_mezon->assignRole('mezon');
-        $user_pamela->assignRole('mezoncajero');
+        $user_meson->assignRole('meson');
+        $user_mesoncajero->assignRole('mesoncajero');
         $user_cajero->assignRole('cajero');
         $user_super_admin->assignRole('super-admin');
     }
