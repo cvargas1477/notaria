@@ -1,3 +1,5 @@
+Sistema creado con perfiles de meson, cajero, mesoncajero, administrador. Los usuarios dependiendo de su perfil pueden generar ventas(meson), realizar los pagos de las ventas, emitir reportes de los pagos realizados (cajero) o realizar ambas funciones(mesoncajero), el administrador ademar de realizar las funciones antes mencionadas, puede agregar/eliminar servicios, agregar/eliminar usuarios.
+es un  sistema realizado en laravel 7. 
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
